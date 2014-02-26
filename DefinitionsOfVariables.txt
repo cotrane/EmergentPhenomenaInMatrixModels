@@ -1,0 +1,46 @@
+In this file are listed all parameters that can be chosen in the various models. A more detailed definition of the various matrices can be found in my thesis as well as in the actual code as comments 
+
+
+LOOPNUMBER ... Number of Monte-Carlo loops
+SIZE ... Matrix Size
+NUMMAT ... Number of Matrices in Model
+PARG ... Parameter 'g' in one definition of 2MM
+MASS ... Mass Parameter
+THERM ... Number of Monte-Carlo loops excluded from computation of observables
+STEPS ... Number of Integration steps done per Monte-Carlo loop
+STEP ... Defines after how many Monte-Carlo steps Observables are computed
+MULT ... Multiplication factor of random position matrix in 2MM; increase for 'hotter' random configuration
+EPS ... Size of initial integration step; later adjusted such that acceptance rate is within specified interval
+LACC ... lower boundary of acceptance rate
+UACC ... upper boundary of acceptance rate
+PATHOUT ... Path where output files are saved
+EVstore ... if eigenvalues shall be evaluated during simulation and only distribution stored = 0; if EV's shall be stored set to 1
+compEV ... 1 if EV's or its distribution of individual matrices shall be computed
+compComm ... 1 if EV's or distribution of commutator shall be computed
+compC ... 1 if EV's of matrix C or its distribution shall be computed
+compD ... 1 if EV's of Dirac operator as defined in thesis or its distribution shall be computed
+compB ... 1 if EV's or distribution of EV's for matrix B shall be computed
+compTraces ... 1 if some Correlation functions shall be computed
+compPhi ... if Ev's or the distribution of matrix \Phi in 2MM shall be computed
+compGdd ... 1 if EV distribution for stress-energy-tensor shall be computed
+compOffDiag ... if EV's or distribution of offDiagonal modes of individual matrices shall be computed
+ALPHATILDE ... value of coupling constant
+LAMBDA ... value of second coupling constant in modified 8MM
+START ... defines starting configuration of matrices (hot start, cold start, ....);
+          1 ... hot start
+          0 ... cold start in SU(3) config
+          2 ... cold start in SU(2) config; together with dias=1 generates SU(2)xU(1) configuration
+          3,4 ... different SU(2) configurations in 8MM
+MOMMULT ... Multplication factor for generation of random momenta in HMC routine; increase to obtain higher random momenta
+PATHIN ... for ErrorEval and EVEvaluation; path to input file that shall be evaluated
+ALPHA ... value of coupling constant 
+Position ... number of Monte-Carlo loop from which computation of observable shall be started
+loops ... number of Monte-Carlo loops which shall be taken into account for computation of observables 
+step ... distance between MC-Steps that shall be used for computation of observables
+STEPS ... distance between MC-Steps that shall be used for computation of observables
+BINWIDTH ... width of bins that shall be used for the computation of the EV distribution
+REPS ... defines which representation to use; e.g.: reps = n-1 for SU(2); must be n<=MATRIX_SIZE !!!!; 
+         one can put more representations into one matrix, say n_1, n_2 where n_1 + n_2 <= MATRIX_SIZE; the syntax is n_1-n_2-n_3-........
+DIAG ... for 8MM; if set to 1 variable START must be 2!!!; if 1 simulation starts in SU(2)xU(1) configuration
+PROP1, PROP2 ... variables specify the free parameters in U(1) generator; as matrices in these models are traceless size of U(1) rep is always smaller MATRIX_SIZE and we thus have 2   
+                 free parameters u,v (see thesis p.117)

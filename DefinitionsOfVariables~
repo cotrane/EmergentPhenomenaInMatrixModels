@@ -1,0 +1,29 @@
+LOOPNUMBER ... Number of Monte-Carlo loops
+SIZE ... Matrix Size
+NUMMAT ... Number of Matrices in Model
+PARG ... Parameter 'g' in one definition of 2MM
+MASS ... Mass Parameter
+THERM ... Number of Monte-Carlo loops excluded from computation of observables
+STEPS ... Number of Integration steps done per Monte-Carlo loop
+STEP ... Defines after how many Monte-Carlo steps Observables are computed
+MULT ... Multiplication factor of random momenta in HMC routine; increase for higher random momentum
+EPS ... Size of initial integration step; later adjusted such that acceptance rate is within specified interval
+LACC ... lower boundary of acceptance rate
+UACC ... upper boundary of acceptance rate
+PATHOUT ... Path where output files are saved
+EVstore ... if eigenvalues shall be evaluated during simulation and only distribution stored = 0; if EV's shall be stored set to 1
+compEV ... 1 if EV's or its distribution of individual matrices shall be computed
+compComm ... 1 if EV's or distribution of commutator shall be computed
+compC ... 1 if EV's of matrix C or its distribution shall be computed
+compD ... 1 if EV's of Dirac operator as defined in thesis or its distribution shall be computed
+compTraces ... 1 if some Correlation functions shall be computed
+compPhi ... if Ev's or the distribution of matrix \Phi in 2MM shall be computed
+compOffDiag ... if EV's or distribution of offDiagonal modes of individual matrices shall be computed
+ALPHATILDE ... value of coupling constant
+LAMBDA ... value of second coupling constant in modified 8MM
+START ... defines starting configuration of matrices (hot start, cold start, ....);
+          1 ... hot start
+          0 ... cold start in SU(3) config
+          2 ... cold start in SU(2) config
+          3,4 ... different SU(2) configurations in 8MM
+          

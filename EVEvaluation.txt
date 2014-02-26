@@ -1,0 +1,13 @@
+PATHIN
+/home/tkaltenbrunner/Documents/ClusterResults/3MM/data/3MMBEV1store-20x164000-a=1.12.txt
+PATHOUT
+/home/tkaltenbrunner/Documents/ClusterResults/3MM/data/3MMBEV1-N20-1stExcState.txt
+MATRIX_SIZE
+20
+Position
+50000
+STEPS
+50000
+BINWIDTH
+0.05
+
