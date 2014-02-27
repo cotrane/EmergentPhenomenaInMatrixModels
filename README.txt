@@ -36,10 +36,17 @@ RandomGens, MatrixMan, RepsSUn, GammaMatrices, eigenvalues
 
 ------ starting the simulation ---------
 
-
 The various simulation can be started by the command "./NameOfSimulation"; the parameters will then be loaded from the 'NameOfSimulation.txt' file. If more simulations shall be started after each other with varying parameters execute the simulation using a python file and the command "python NameOfSimulation.py". Note that such a file does not exist for all simulations! It could be written in the same way as for the simulations where such a file is present. The necessary code is included in the projects.
 
 For the parallelized simulations HMC_MPI and HMCYM_MPI the command to execute the simulation is, e.g., "mpirun -n 2 ./HMC_MPI". Here, the executable HMC_MPI would be started using 2 cores. This number can be increased up to the maximal number of matrices, 3 for the 3MM and 8 for the 8MM. More cores will not speed up to simulation but might slow it down.
+
+
+------ notes for choosing the correct model ---------------
+
+The simulations 'Dynamics', 'HMC' and 'HMC_MPI' contain code for various models, namely the 1-dimensional harmonic oscillator and the 3-d and 8-d Yang-Mills-Myers model. In order to choose the model you want to run open file 'model.h'. In this file you can determine the desired model by changing the number in the line '#define MM.', where the dot indicates the dimensionality of the model. Which options are available is indicated in the file. You have to choose the model BEFORE compiling the model! 
+
+
+
 
 
 
