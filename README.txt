@@ -1,7 +1,7 @@
 
 The different folders contain the code written for the simulation of different matrix models included in the thesis "Emergent Phenomena in Matrix Models", arXiv: .... A copy of the thesis is also included in the folder.
 
-The different .txt and .py files contain the parameters that can be chosen for the various models. The name of the file corresponds to the matrix model that is simulated.
+The different .txt and .py files contain the parameters that can be chosen for the various models. The name of the file corresponds to the matrix model that is simulated. The meaning of the parameters is indicated in the file DefinitionsOfVariables.txt in the main folder.
 
 
 ----- linking to libraries --------
